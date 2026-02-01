@@ -1,0 +1,33 @@
+name: Monthly DCF Update
+
+on:
+  schedule:
+    - cron: '0 0 1 * *' # Run at 00:00 on the 1st of every month
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  update-models:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install yfinance pandas numpy numpy-financial openpyxl matplotlib click tabulate
+        # Install the library from the other repo or local if available
+        # For this demo, we assume the library is in the parent directory or installed via pip
+        pip install git+https://github.com/gilhermanns/modern-automated-dcf.git
+    - name: Run DCF Demo
+      run: |
+        python run_demo.py --tickers AAPL,MSFT,TSLA
+    - name: Commit and push changes
+      run: |
+        git config --global user.name 'GitHub Action'
+        git config --global user.email 'action@github.com'
+        git add outputs/
+        git commit -m "chore: monthly update of DCF models [skip ci]" || echo "No changes to commit"
+        git push

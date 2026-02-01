@@ -1,0 +1,8 @@
+pandas
+numpy
+matplotlib
+openpyxl
+yfinance
+numpy-financial
+click
+# modern-automated-dcf (installed from local or github)
