@@ -1,4 +1,4 @@
-# Perfect DCF Model Demo ✨
+#  DCF Model Demo ✨
 
 [![GitHub Stars](https://img.shields.io/github/stars/gilhermanns/perfect-dcf-model-demo?style=social)](https://github.com/gilhermanns/perfect-dcf-model-demo/stargazers)
 [![Build Status](https://github.com/gilhermanns/perfect-dcf-model-demo/actions/workflows/monthly_run.yml/badge.svg)](https://github.com/gilhermanns/perfect-dcf-model-demo/actions/workflows/monthly_run.yml)
