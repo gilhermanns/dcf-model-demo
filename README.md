@@ -5,7 +5,7 @@
 
 ![Hero Excel Screenshot](outputs/AAPL_DCF_Model.xlsx)
 
-**Flawless DCF valuations for AAPL, MSFT, TSLA** using the `modern-automated-dcf` library.
+** DCF valuations for AAPL, MSFT, TSLA** using the `modern-automated-dcf` library.
 
 ## Results (as of Feb 2026)
 | Ticker | Implied Price | Current Price | Upside (%) |
