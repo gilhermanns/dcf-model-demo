@@ -1,0 +1,16 @@
+node_modules/
+__pycache__/
+*.py[cod]
+*.class
+.env
+.venv
+env/
+venv/
+ENV/
+dist/
+build/
+*.egg-info/
+*.xlsx
+*.csv
+*.png
+.DS_Store
