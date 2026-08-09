@@ -46,3 +46,7 @@ This tool is for educational and analytical purposes only. It is not financial a
 ## License
 
 This project is licensed under the MIT License.
+
+---
+
+*Entwickelt mit Unterstützung von Claude Code (Anthropic).*
