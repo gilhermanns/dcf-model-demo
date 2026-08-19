@@ -1,10 +1,7 @@
-import sys
 import os
 import click
 import pandas as pd
 
-# Add the library path to sys.path to use the local version
-sys.path.append(os.path.abspath("../modern-automated-dcf"))
 from automated_dcf import DCFModel
 
 @click.command()
